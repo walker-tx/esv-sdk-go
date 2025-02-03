@@ -1,0 +1,35 @@
+speakeasyVersion: 1.481.1
+sources:
+    Esv-OAS:
+        sourceNamespace: esv-org-api
+        sourceRevisionDigest: sha256:6d682808db46836b6b8f15c1c3d1efe281babab94fae33d5668d772e61cfb489
+        sourceBlobDigest: sha256:40c6ad832e98a0f34e24aea90700c770ad62a0bb5f9313bd51f1183e6c11a45f
+        tags:
+            - latest
+targets:
+    esv:
+        source: Esv-OAS
+        sourceNamespace: esv-org-api
+        sourceRevisionDigest: sha256:6d682808db46836b6b8f15c1c3d1efe281babab94fae33d5668d772e61cfb489
+        sourceBlobDigest: sha256:40c6ad832e98a0f34e24aea90700c770ad62a0bb5f9313bd51f1183e6c11a45f
+        codeSamplesNamespace: esv-oas-go-code-samples
+        codeSamplesRevisionDigest: sha256:163a84c7cae5002ea9e7b4400117bf2ff96fcde3abb95376996f1d83a8663bf7
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Esv-OAS:
+            inputs:
+                - location: registry.speakeasyapi.dev/walker/esv/esv-org-api:main
+            registry:
+                location: registry.speakeasyapi.dev/walker/esv/esv-oas
+    targets:
+        esv:
+            target: go
+            source: Esv-OAS
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/walker/esv/esv-oas-go-code-samples
+                labelOverride:
+                    fixedValue: Go (SDK)
+                blocking: false

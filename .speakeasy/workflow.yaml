@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Esv-OAS:
+        inputs:
+            - location: registry.speakeasyapi.dev/walker/esv/esv-org-api:main
+        registry:
+            location: registry.speakeasyapi.dev/walker/esv/esv-oas
+targets:
+    esv:
+        target: go
+        source: Esv-OAS
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/walker/esv/esv-oas-go-code-samples
+            labelOverride:
+                fixedValue: Go (SDK)
+            blocking: false
