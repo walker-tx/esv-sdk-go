@@ -13,7 +13,7 @@ import (
 
 	"github.com/ericlagergren/decimal"
 
-	"github.com/walker-tx/esv-sdk/types"
+	"github.com/walker-tx/esv-sdk-go/types"
 )
 
 func GenerateURL(_ context.Context, serverURL, path string, pathParams interface{}, globals interface{}) (string, error) {

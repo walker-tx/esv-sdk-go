@@ -4,8 +4,8 @@ package operations
 
 import (
 	"errors"
-	"github.com/walker-tx/esv-sdk/internal/utils"
-	"github.com/walker-tx/esv-sdk/retry"
+	"github.com/walker-tx/esv-sdk-go/internal/utils"
+	"github.com/walker-tx/esv-sdk-go/retry"
 	"time"
 )
 

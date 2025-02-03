@@ -4,8 +4,8 @@ package main
 
 import (
 	"context"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/operations"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
 	"log"
 	"os"
 )
@@ -13,8 +13,8 @@ import (
 func main() {
 	ctx := context.Background()
 
-	s := esvsdk.New(
-		esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+	s := esvsdkgo.New(
+		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
 	res, err := s.Passages.GetHTML(ctx, operations.GetPassageHTMLRequest{

@@ -62,8 +62,8 @@ package main
 
 import (
 	"context"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/operations"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
 	"log"
 	"os"
 )
@@ -71,8 +71,8 @@ import (
 func main() {
 	ctx := context.Background()
 
-	s := esvsdk.New(
-		esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+	s := esvsdkgo.New(
+		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
 	res, err := s.Passages.GetHTML(ctx, operations.GetPassageHTMLRequest{
@@ -106,8 +106,8 @@ package main
 
 import (
 	"context"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/operations"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
 	"log"
 	"os"
 )
@@ -115,8 +115,8 @@ import (
 func main() {
 	ctx := context.Background()
 
-	s := esvsdk.New(
-		esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+	s := esvsdkgo.New(
+		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
 	res, err := s.Passages.GetHTML(ctx, operations.GetPassageHTMLRequest{
@@ -163,7 +163,7 @@ package main
 
 import (
 	"context"
-	esvsdk "github.com/walker-tx/esv-sdk"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
 	"log"
 	"os"
 )
@@ -171,8 +171,8 @@ import (
 func main() {
 	ctx := context.Background()
 
-	s := esvsdk.New(
-		esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+	s := esvsdkgo.New(
+		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
 	res, err := s.Passages.Search(ctx, "<value>", nil, nil)
@@ -210,9 +210,9 @@ package main
 
 import (
 	"context"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/operations"
-	"github.com/walker-tx/esv-sdk/retry"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
+	"github.com/walker-tx/esv-sdk-go/retry"
 	"log"
 	"models/operations"
 	"os"
@@ -221,8 +221,8 @@ import (
 func main() {
 	ctx := context.Background()
 
-	s := esvsdk.New(
-		esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+	s := esvsdkgo.New(
+		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
 	res, err := s.Passages.GetHTML(ctx, operations.GetPassageHTMLRequest{
@@ -254,9 +254,9 @@ package main
 
 import (
 	"context"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/operations"
-	"github.com/walker-tx/esv-sdk/retry"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
+	"github.com/walker-tx/esv-sdk-go/retry"
 	"log"
 	"os"
 )
@@ -264,8 +264,8 @@ import (
 func main() {
 	ctx := context.Background()
 
-	s := esvsdk.New(
-		esvsdk.WithRetryConfig(
+	s := esvsdkgo.New(
+		esvsdkgo.WithRetryConfig(
 			retry.Config{
 				Strategy: "backoff",
 				Backoff: &retry.BackoffStrategy{
@@ -276,7 +276,7 @@ func main() {
 				},
 				RetryConnectionErrors: false,
 			}),
-		esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
 	res, err := s.Passages.GetHTML(ctx, operations.GetPassageHTMLRequest{
@@ -315,9 +315,9 @@ package main
 import (
 	"context"
 	"errors"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/apierrors"
-	"github.com/walker-tx/esv-sdk/models/operations"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/apierrors"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
 	"log"
 	"os"
 )
@@ -325,8 +325,8 @@ import (
 func main() {
 	ctx := context.Background()
 
-	s := esvsdk.New(
-		esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+	s := esvsdkgo.New(
+		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
 	res, err := s.Passages.GetHTML(ctx, operations.GetPassageHTMLRequest{
@@ -362,8 +362,8 @@ package main
 
 import (
 	"context"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/operations"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
 	"log"
 	"os"
 )
@@ -371,9 +371,9 @@ import (
 func main() {
 	ctx := context.Background()
 
-	s := esvsdk.New(
-		esvsdk.WithServerURL("https://api.esv.org/v3/"),
-		esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+	s := esvsdkgo.New(
+		esvsdkgo.WithServerURL("https://api.esv.org/v3/"),
+		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
 	res, err := s.Passages.GetHTML(ctx, operations.GetPassageHTMLRequest{

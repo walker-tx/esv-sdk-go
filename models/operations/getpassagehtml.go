@@ -3,8 +3,8 @@
 package operations
 
 import (
-	"github.com/walker-tx/esv-sdk/internal/utils"
-	"github.com/walker-tx/esv-sdk/models/components"
+	"github.com/walker-tx/esv-sdk-go/internal/utils"
+	"github.com/walker-tx/esv-sdk-go/models/components"
 )
 
 type GetPassageHTMLRequest struct {

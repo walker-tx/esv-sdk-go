@@ -5,8 +5,8 @@ package operations
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/walker-tx/esv-sdk/internal/utils"
-	"github.com/walker-tx/esv-sdk/models/components"
+	"github.com/walker-tx/esv-sdk-go/internal/utils"
+	"github.com/walker-tx/esv-sdk-go/models/components"
 )
 
 // IndentUsing - Character to use for indentation

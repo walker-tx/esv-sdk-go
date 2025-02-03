@@ -3,7 +3,7 @@
 package operations
 
 import (
-	"github.com/walker-tx/esv-sdk/models/components"
+	"github.com/walker-tx/esv-sdk-go/models/components"
 	"io"
 )
 

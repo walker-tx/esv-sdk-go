@@ -25,16 +25,16 @@ package main
 import(
 	"context"
 	"os"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/operations"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
 	"log"
 )
 
 func main() {
     ctx := context.Background()
     
-    s := esvsdk.New(
-        esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+    s := esvsdkgo.New(
+        esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
     )
 
     res, err := s.Passages.GetHTML(ctx, operations.GetPassageHTMLRequest{
@@ -83,15 +83,15 @@ package main
 import(
 	"context"
 	"os"
-	esvsdk "github.com/walker-tx/esv-sdk"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
 	"log"
 )
 
 func main() {
     ctx := context.Background()
     
-    s := esvsdk.New(
-        esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+    s := esvsdkgo.New(
+        esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
     )
 
     res, err := s.Passages.Search(ctx, "<value>", nil, nil)
@@ -152,15 +152,15 @@ package main
 import(
 	"context"
 	"os"
-	esvsdk "github.com/walker-tx/esv-sdk"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
 	"log"
 )
 
 func main() {
     ctx := context.Background()
     
-    s := esvsdk.New(
-        esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+    s := esvsdkgo.New(
+        esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
     )
 
     res, err := s.Passages.GetAudio(ctx, "John 1:1")
@@ -207,16 +207,16 @@ package main
 import(
 	"context"
 	"os"
-	esvsdk "github.com/walker-tx/esv-sdk"
-	"github.com/walker-tx/esv-sdk/models/operations"
+	esvsdkgo "github.com/walker-tx/esv-sdk-go"
+	"github.com/walker-tx/esv-sdk-go/models/operations"
 	"log"
 )
 
 func main() {
     ctx := context.Background()
     
-    s := esvsdk.New(
-        esvsdk.WithSecurity(os.Getenv("ESV_API_KEY")),
+    s := esvsdkgo.New(
+        esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
     )
 
     res, err := s.Passages.GetText(ctx, operations.GetPassageTextRequest{

@@ -12,7 +12,7 @@ import (
 
 	"github.com/ericlagergren/decimal"
 
-	"github.com/walker-tx/esv-sdk/types"
+	"github.com/walker-tx/esv-sdk-go/types"
 )
 
 func populateForm(paramName string, explode bool, objType reflect.Type, objValue reflect.Value, delimiter string, getFieldName func(reflect.StructField) string) url.Values {

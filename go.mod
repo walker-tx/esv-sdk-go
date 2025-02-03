@@ -1,4 +1,4 @@
-module github.com/walker-tx/esv-sdk
+module github.com/walker-tx/esv-sdk-go
 
 go 1.20
 

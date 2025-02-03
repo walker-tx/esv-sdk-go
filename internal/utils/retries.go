@@ -6,7 +6,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/walker-tx/esv-sdk/retry"
+	"github.com/walker-tx/esv-sdk-go/retry"
 	"math"
 	"math/rand"
 	"net/http"

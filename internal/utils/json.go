@@ -13,7 +13,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/walker-tx/esv-sdk/types"
+	"github.com/walker-tx/esv-sdk-go/types"
 
 	"github.com/ericlagergren/decimal"
 )
