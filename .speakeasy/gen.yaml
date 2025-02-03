@@ -35,5 +35,5 @@ go:
   maxMethodParams: 4
   methodArguments: require-security-and-request
   outputModelSuffix: output
-  packageName: github.com/walker-tx/esv-sdk
+  packageName: github.com/walker-tx/esv-sdk-go
   responseFormat: envelope-http
