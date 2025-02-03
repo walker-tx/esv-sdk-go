@@ -48,7 +48,7 @@ For more information about the API: [ESV API Website](https://api.esv.org/)
 
 To add the SDK as a dependency to your project:
 ```bash
-go get github.com/walker-tx/esv-sdk
+go get github.com/walker-tx/esv-sdk-go
 ```
 <!-- End SDK Installation [installation] -->
 
