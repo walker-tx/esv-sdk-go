@@ -3,10 +3,10 @@ id: cacaa35d-ada0-4b8b-99f3-a2c78661b3d5
 management:
   docChecksum: 68a5dff174a4d4f21b279d09f8b73a3e
   docVersion: 1.0.0
-  speakeasyVersion: 1.481.1
-  generationVersion: 2.500.5
-  releaseVersion: 0.0.3
-  configChecksum: 19bff14a13f2c928a372692c23f9bfa5
+  speakeasyVersion: 1.484.1
+  generationVersion: 2.503.2
+  releaseVersion: 0.0.4
+  configChecksum: 0bd6e48284a85533fb6af5f4b436044d
   repoURL: https://github.com/walker-tx/esv-sdk-go.git
   installationURL: https://github.com/walker-tx/esv-sdk-go
 features:
