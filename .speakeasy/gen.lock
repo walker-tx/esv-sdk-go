@@ -5,8 +5,8 @@ management:
   docVersion: 1.0.0
   speakeasyVersion: 1.484.1
   generationVersion: 2.503.2
-  releaseVersion: 0.0.4
-  configChecksum: 0bd6e48284a85533fb6af5f4b436044d
+  releaseVersion: 0.0.5
+  configChecksum: 4f4bf998135b74ae5ef230aca7c448f0
   repoURL: https://github.com/walker-tx/esv-sdk-go.git
   installationURL: https://github.com/walker-tx/esv-sdk-go
 features:

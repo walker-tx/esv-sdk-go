@@ -1,4 +1,7 @@
-# github.com/walker-tx/esv-sdk
+# Esv.org Go SDK
+
+> [!IMPORTANT]  
+> This is not an official SDK developed by Esv.org.
 
 Developer-friendly & type-safe Go SDK specifically catered to leverage *Esv.org* API.
 
@@ -24,7 +27,7 @@ For more information about the API: [ESV API Website](https://api.esv.org/)
 <!-- Start Table of Contents [toc] -->
 ## Table of Contents
 <!-- $toc-max-depth=2 -->
-* [github.com/walker-tx/esv-sdk](#githubcomwalker-txesv-sdk)
+* [Esv.org Go SDK](#esvorg-go-sdk)
   * [SDK Installation](#sdk-installation)
   * [SDK Example Usage](#sdk-example-usage)
   * [Authentication](#authentication)
