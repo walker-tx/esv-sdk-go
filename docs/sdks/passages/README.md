@@ -31,8 +31,9 @@ import(
 )
 
 func main() {
-    ctx := context.Background()
-    
+ctx := context.Background()
+
+
     s := esvsdkgo.New(
         esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
     )
@@ -88,8 +89,9 @@ import(
 )
 
 func main() {
-    ctx := context.Background()
-    
+ctx := context.Background()
+
+
     s := esvsdkgo.New(
         esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
     )
@@ -157,8 +159,9 @@ import(
 )
 
 func main() {
-    ctx := context.Background()
-    
+ctx := context.Background()
+
+
     s := esvsdkgo.New(
         esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
     )
@@ -213,8 +216,9 @@ import(
 )
 
 func main() {
-    ctx := context.Background()
-    
+ctx := context.Background()
+
+
     s := esvsdkgo.New(
         esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
     )
