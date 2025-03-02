@@ -19,3 +19,13 @@ Based on:
 - [go v0.0.4] .
 ### Releases
 - [Go v0.0.4] https://github.com/walker-tx/esv-sdk-go/releases/tag/v0.0.4 - .
+
+## 2025-03-02 00:25:15
+### Changes
+Based on:
+- OpenAPI Doc  
+- Speakeasy CLI 1.508.1 (2.536.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.1.0] .
+### Releases
+- [Go v0.1.0] https://github.com/walker-tx/esv-sdk-go/releases/tag/v0.1.0 - .
