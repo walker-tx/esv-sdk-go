@@ -3,28 +3,28 @@ id: cacaa35d-ada0-4b8b-99f3-a2c78661b3d5
 management:
   docChecksum: 68a5dff174a4d4f21b279d09f8b73a3e
   docVersion: 1.0.0
-  speakeasyVersion: 1.484.1
-  generationVersion: 2.503.2
-  releaseVersion: 0.0.5
-  configChecksum: 4f4bf998135b74ae5ef230aca7c448f0
+  speakeasyVersion: 1.509.1
+  generationVersion: 2.539.1
+  releaseVersion: 0.1.0
+  configChecksum: 20f85de48434a3915896e3d6283250ef
   repoURL: https://github.com/walker-tx/esv-sdk-go.git
   installationURL: https://github.com/walker-tx/esv-sdk-go
 features:
   go:
     additionalDependencies: 0.1.0
-    constsAndDefaults: 0.1.6
-    core: 3.6.12
+    constsAndDefaults: 0.1.10
+    core: 3.7.2
     defaultEnabledRetries: 0.2.0
     downloadStreams: 0.1.2
     envVarSecurityUsage: 0.3.2
     flattening: 2.81.1
-    globalSecurity: 2.82.10
+    globalSecurity: 2.82.11
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
     globalServerURLs: 2.82.2
     intellisenseMarkdownSupport: 0.1.0
     nameOverrides: 2.81.2
-    pagination: 2.82.2
+    pagination: 2.82.3
     responseFormat: 0.1.2
     retries: 2.83.2
     sdkHooks: 0.1.0

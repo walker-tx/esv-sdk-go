@@ -1,19 +1,20 @@
-speakeasyVersion: 1.484.1
+speakeasyVersion: 1.509.1
 sources:
     Esv-OAS:
         sourceNamespace: esv-org-api
-        sourceRevisionDigest: sha256:6d682808db46836b6b8f15c1c3d1efe281babab94fae33d5668d772e61cfb489
-        sourceBlobDigest: sha256:40c6ad832e98a0f34e24aea90700c770ad62a0bb5f9313bd51f1183e6c11a45f
+        sourceRevisionDigest: sha256:a3267316e2219ebc31fa495f9c77dccdcbb131df3a38f1e5cd05e2f5c43c6904
+        sourceBlobDigest: sha256:aa45a5cd72f8b25ef3d411e18de9bdf59ec407dc833b577731a8a09e6722977c
         tags:
             - latest
+            - speakeasy-sdk-regen-1740606986
 targets:
     esv:
         source: Esv-OAS
         sourceNamespace: esv-org-api
-        sourceRevisionDigest: sha256:6d682808db46836b6b8f15c1c3d1efe281babab94fae33d5668d772e61cfb489
-        sourceBlobDigest: sha256:40c6ad832e98a0f34e24aea90700c770ad62a0bb5f9313bd51f1183e6c11a45f
+        sourceRevisionDigest: sha256:a3267316e2219ebc31fa495f9c77dccdcbb131df3a38f1e5cd05e2f5c43c6904
+        sourceBlobDigest: sha256:aa45a5cd72f8b25ef3d411e18de9bdf59ec407dc833b577731a8a09e6722977c
         codeSamplesNamespace: esv-oas-go-code-samples
-        codeSamplesRevisionDigest: sha256:cfd5271d15685838ed07c4b6baf14fc2daec06fd398ed70849e2178413c35b26
+        codeSamplesRevisionDigest: sha256:dc0e5727f5f75cfe0dc435f8c92ff74a2417708a75a48a6fded9c8daaac883ff
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
