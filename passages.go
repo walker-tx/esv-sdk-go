@@ -32,13 +32,6 @@ func newPassages(sdkConfig sdkConfiguration) *Passages {
 //
 // https://api.esv.org/docs/passage-html/ - Esv.org API Docs for `/v3/passages/html`
 func (s *Passages) GetHTML(ctx context.Context, request operations.GetPassageHTMLRequest, opts ...operations.Option) (*operations.GetPassageHTMLResponse, error) {
-	hookCtx := hooks.HookContext{
-		Context:        ctx,
-		OperationID:    "getPassageHtml",
-		OAuth2Scopes:   []string{},
-		SecuritySource: s.sdkConfiguration.Security,
-	}
-
 	o := operations.Options{}
 	supportedOptions := []string{
 		operations.SupportedOptionRetries,
@@ -60,6 +53,14 @@ func (s *Passages) GetHTML(ctx context.Context, request operations.GetPassageHTM
 	opURL, err := url.JoinPath(baseURL, "/passage/html/")
 	if err != nil {
 		return nil, fmt.Errorf("error generating URL: %w", err)
+	}
+
+	hookCtx := hooks.HookContext{
+		BaseURL:        baseURL,
+		Context:        ctx,
+		OperationID:    "getPassageHtml",
+		OAuth2Scopes:   []string{},
+		SecuritySource: s.sdkConfiguration.Security,
 	}
 
 	timeout := o.Timeout
@@ -262,13 +263,6 @@ func (s *Passages) GetHTML(ctx context.Context, request operations.GetPassageHTM
 //
 // https://api.esv.org/docs/passage-search/ - Esv.org API Docs for `/v3/passage/search`
 func (s *Passages) Search(ctx context.Context, query string, pageSize *int64, page *int64, opts ...operations.Option) (*operations.SearchPassagesResponse, error) {
-	hookCtx := hooks.HookContext{
-		Context:        ctx,
-		OperationID:    "searchPassages",
-		OAuth2Scopes:   []string{},
-		SecuritySource: s.sdkConfiguration.Security,
-	}
-
 	request := operations.SearchPassagesRequest{
 		Query:    query,
 		PageSize: pageSize,
@@ -296,6 +290,14 @@ func (s *Passages) Search(ctx context.Context, query string, pageSize *int64, pa
 	opURL, err := url.JoinPath(baseURL, "/passage/search/")
 	if err != nil {
 		return nil, fmt.Errorf("error generating URL: %w", err)
+	}
+
+	hookCtx := hooks.HookContext{
+		BaseURL:        baseURL,
+		Context:        ctx,
+		OperationID:    "searchPassages",
+		OAuth2Scopes:   []string{},
+		SecuritySource: s.sdkConfiguration.Security,
 	}
 
 	timeout := o.Timeout
@@ -538,13 +540,6 @@ func (s *Passages) Search(ctx context.Context, query string, pageSize *int64, pa
 //
 // https://api.esv.org/docs/passage-audio/ - Esv.org API Docs for `/v3/passage/audio`
 func (s *Passages) GetAudio(ctx context.Context, query string, opts ...operations.Option) (*operations.GetPassageAudioResponse, error) {
-	hookCtx := hooks.HookContext{
-		Context:        ctx,
-		OperationID:    "getPassageAudio",
-		OAuth2Scopes:   []string{},
-		SecuritySource: s.sdkConfiguration.Security,
-	}
-
 	request := operations.GetPassageAudioRequest{
 		Query: query,
 	}
@@ -570,6 +565,14 @@ func (s *Passages) GetAudio(ctx context.Context, query string, opts ...operation
 	opURL, err := url.JoinPath(baseURL, "/passage/audio/")
 	if err != nil {
 		return nil, fmt.Errorf("error generating URL: %w", err)
+	}
+
+	hookCtx := hooks.HookContext{
+		BaseURL:        baseURL,
+		Context:        ctx,
+		OperationID:    "getPassageAudio",
+		OAuth2Scopes:   []string{},
+		SecuritySource: s.sdkConfiguration.Security,
 	}
 
 	timeout := o.Timeout
@@ -764,13 +767,6 @@ func (s *Passages) GetAudio(ctx context.Context, query string, opts ...operation
 //
 // https://api.esv.org/docs/passage-text/ - Esv.org API Docs for `/v3/passages/text`
 func (s *Passages) GetText(ctx context.Context, request operations.GetPassageTextRequest, opts ...operations.Option) (*operations.GetPassageTextResponse, error) {
-	hookCtx := hooks.HookContext{
-		Context:        ctx,
-		OperationID:    "getPassageText",
-		OAuth2Scopes:   []string{},
-		SecuritySource: s.sdkConfiguration.Security,
-	}
-
 	o := operations.Options{}
 	supportedOptions := []string{
 		operations.SupportedOptionRetries,
@@ -792,6 +788,14 @@ func (s *Passages) GetText(ctx context.Context, request operations.GetPassageTex
 	opURL, err := url.JoinPath(baseURL, "/passage/text/")
 	if err != nil {
 		return nil, fmt.Errorf("error generating URL: %w", err)
+	}
+
+	hookCtx := hooks.HookContext{
+		BaseURL:        baseURL,
+		Context:        ctx,
+		OperationID:    "getPassageText",
+		OAuth2Scopes:   []string{},
+		SecuritySource: s.sdkConfiguration.Security,
 	}
 
 	timeout := o.Timeout
