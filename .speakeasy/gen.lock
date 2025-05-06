@@ -3,17 +3,17 @@ id: cacaa35d-ada0-4b8b-99f3-a2c78661b3d5
 management:
   docChecksum: 68a5dff174a4d4f21b279d09f8b73a3e
   docVersion: 1.0.0
-  speakeasyVersion: 1.509.1
-  generationVersion: 2.539.1
-  releaseVersion: 0.1.0
-  configChecksum: 20f85de48434a3915896e3d6283250ef
+  speakeasyVersion: 1.542.3
+  generationVersion: 2.597.9
+  releaseVersion: 0.1.1
+  configChecksum: 653e360498d5a51e5804c3e5f9827a97
   repoURL: https://github.com/walker-tx/esv-sdk-go.git
   installationURL: https://github.com/walker-tx/esv-sdk-go
 features:
   go:
     additionalDependencies: 0.1.0
-    constsAndDefaults: 0.1.10
-    core: 3.7.2
+    constsAndDefaults: 0.1.12
+    core: 3.7.4
     defaultEnabledRetries: 0.2.0
     downloadStreams: 0.1.2
     envVarSecurityUsage: 0.3.2
@@ -24,7 +24,7 @@ features:
     globalServerURLs: 2.82.2
     intellisenseMarkdownSupport: 0.1.0
     nameOverrides: 2.81.2
-    pagination: 2.82.3
+    pagination: 2.82.4
     responseFormat: 0.1.2
     retries: 2.83.2
     sdkHooks: 0.1.0
@@ -108,7 +108,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     CompactNotation:
       parameters:
         query:
@@ -132,7 +131,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     ChapterRange:
       parameters:
         query:
@@ -156,7 +154,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     NumericalEncoding:
       parameters:
         query:
@@ -180,7 +177,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     DigitalRange:
       parameters:
         query:
@@ -204,7 +200,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     MultiReference:
       parameters:
         query:
@@ -228,7 +223,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     StructuredDigital:
       parameters:
         query:
@@ -252,7 +246,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     "":
       parameters:
         query:
@@ -276,7 +269,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
   searchPassages:
     speakeasy-default-search-passages:
       parameters:
@@ -380,7 +372,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     CompactNotation:
       parameters:
         query:
@@ -407,7 +398,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     ChapterRange:
       parameters:
         query:
@@ -434,7 +424,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     NumericalEncoding:
       parameters:
         query:
@@ -461,7 +450,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     DigitalRange:
       parameters:
         query:
@@ -488,7 +476,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     MultiReference:
       parameters:
         query:
@@ -515,7 +502,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     StructuredDigital:
       parameters:
         query:
@@ -542,7 +528,6 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
     "":
       parameters:
         query:
@@ -569,6 +554,5 @@ examples:
       responses:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-        "200": {}
-examplesVersion: 1.0.0
+examplesVersion: 1.0.1
 generatedTests: {}
