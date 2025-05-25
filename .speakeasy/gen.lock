@@ -3,17 +3,17 @@ id: cacaa35d-ada0-4b8b-99f3-a2c78661b3d5
 management:
   docChecksum: 68a5dff174a4d4f21b279d09f8b73a3e
   docVersion: 1.0.0
-  speakeasyVersion: 1.542.3
-  generationVersion: 2.597.9
-  releaseVersion: 0.1.1
-  configChecksum: 653e360498d5a51e5804c3e5f9827a97
+  speakeasyVersion: 1.551.0
+  generationVersion: 2.610.0
+  releaseVersion: 0.1.2
+  configChecksum: 43f9ad1e79d2ab09f13bb810a0259b4e
   repoURL: https://github.com/walker-tx/esv-sdk-go.git
   installationURL: https://github.com/walker-tx/esv-sdk-go
 features:
   go:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.12
-    core: 3.7.4
+    core: 3.7.5
     defaultEnabledRetries: 0.2.0
     downloadStreams: 0.1.2
     envVarSecurityUsage: 0.3.2
@@ -21,7 +21,7 @@ features:
     globalSecurity: 2.82.11
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
-    globalServerURLs: 2.82.2
+    globalServerURLs: 2.82.3
     intellisenseMarkdownSupport: 0.1.0
     nameOverrides: 2.81.2
     pagination: 2.82.4
@@ -106,6 +106,8 @@ examples:
           wrapping-div: true
           div-classes: "esv"
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     CompactNotation:
@@ -129,6 +131,8 @@ examples:
           wrapping-div: true
           div-classes: "esv"
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     ChapterRange:
@@ -152,6 +156,8 @@ examples:
           wrapping-div: true
           div-classes: "esv"
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     NumericalEncoding:
@@ -175,6 +181,8 @@ examples:
           wrapping-div: true
           div-classes: "esv"
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     DigitalRange:
@@ -198,6 +206,8 @@ examples:
           wrapping-div: true
           div-classes: "esv"
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     MultiReference:
@@ -221,6 +231,8 @@ examples:
           wrapping-div: true
           div-classes: "esv"
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     StructuredDigital:
@@ -244,6 +256,8 @@ examples:
           wrapping-div: true
           div-classes: "esv"
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     "":
@@ -267,6 +281,8 @@ examples:
           wrapping-div: true
           div-classes: "esv"
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
   searchPassages:
@@ -370,6 +386,8 @@ examples:
           indent-psalm-doxology: 30
           line-length: 0
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     CompactNotation:
@@ -396,6 +414,8 @@ examples:
           indent-psalm-doxology: 30
           line-length: 0
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     ChapterRange:
@@ -422,6 +442,8 @@ examples:
           indent-psalm-doxology: 30
           line-length: 0
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     NumericalEncoding:
@@ -448,6 +470,8 @@ examples:
           indent-psalm-doxology: 30
           line-length: 0
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     DigitalRange:
@@ -474,6 +498,8 @@ examples:
           indent-psalm-doxology: 30
           line-length: 0
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     MultiReference:
@@ -500,6 +526,8 @@ examples:
           indent-psalm-doxology: 30
           line-length: 0
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     StructuredDigital:
@@ -526,6 +554,8 @@ examples:
           indent-psalm-doxology: 30
           line-length: 0
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     "":
@@ -552,7 +582,9 @@ examples:
           indent-psalm-doxology: 30
           line-length: 0
       responses:
+        "200":
+          application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
-examplesVersion: 1.0.1
+examplesVersion: 1.0.2
 generatedTests: {}
