@@ -152,9 +152,9 @@ func New(opts ...SDKOption) *Esv {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.1.1",
-			GenVersion:        "2.597.9",
-			UserAgent:         "speakeasy-sdk/go 0.1.1 2.597.9 1.0.0 github.com/walker-tx/esv-sdk-go",
+			SDKVersion:        "0.1.2",
+			GenVersion:        "2.610.0",
+			UserAgent:         "speakeasy-sdk/go 0.1.2 2.610.0 1.0.0 github.com/walker-tx/esv-sdk-go",
 			Hooks:             hooks.New(),
 		},
 	}
