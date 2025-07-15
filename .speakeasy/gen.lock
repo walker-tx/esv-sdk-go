@@ -3,17 +3,17 @@ id: cacaa35d-ada0-4b8b-99f3-a2c78661b3d5
 management:
   docChecksum: 68a5dff174a4d4f21b279d09f8b73a3e
   docVersion: 1.0.0
-  speakeasyVersion: 1.551.0
-  generationVersion: 2.610.0
-  releaseVersion: 0.1.2
-  configChecksum: 43f9ad1e79d2ab09f13bb810a0259b4e
+  speakeasyVersion: 1.582.0
+  generationVersion: 2.657.1
+  releaseVersion: 0.2.0
+  configChecksum: 5a5432f498a353b70038a2f07f9a0e45
   repoURL: https://github.com/walker-tx/esv-sdk-go.git
   installationURL: https://github.com/walker-tx/esv-sdk-go
 features:
   go:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.12
-    core: 3.7.5
+    core: 3.8.1
     defaultEnabledRetries: 0.2.0
     downloadStreams: 0.1.2
     envVarSecurityUsage: 0.3.2
@@ -26,8 +26,8 @@ features:
     nameOverrides: 2.81.2
     pagination: 2.82.4
     responseFormat: 0.1.2
-    retries: 2.83.2
-    sdkHooks: 0.1.0
+    retries: 2.83.3
+    sdkHooks: 0.2.0
 generatedFiles:
   - .gitattributes
   - /models/apierrors/error.go
@@ -62,6 +62,7 @@ generatedFiles:
   - docs/sdks/passages/README.md
   - esv.go
   - go.mod
+  - internal/config/sdkconfiguration.go
   - internal/hooks/hooks.go
   - internal/utils/contenttype.go
   - internal/utils/env.go
@@ -261,6 +262,31 @@ examples:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     "":
+      parameters:
+        query:
+          q: "<value>"
+          include-passage-references: true
+          include-verse-numbers: true
+          include-first-verse-numbers: true
+          include-footnotes: true
+          include-footnote-body: true
+          include-headings: true
+          include-short-copyright: false
+          include-copyright: false
+          include-passage-horizontal-lines: false
+          include-heading-horizontal-lines: false
+          horizontal-line-length: 55
+          include-selahs: true
+          include-css-link: true
+          inline-styles: false
+          wrapping-div: true
+          div-classes: "esv"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-get-passage-html:
       parameters:
         query:
           q: "<value>"
@@ -559,6 +585,34 @@ examples:
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
     "":
+      parameters:
+        query:
+          q: "<value>"
+          include-passage-references: true
+          include-verse-numbers: true
+          include-first-verse-numbers: true
+          include-footnotes: true
+          include-footnote-body: true
+          include-headings: true
+          include-short-copyright: false
+          include-copyright: false
+          include-passage-horizontal-lines: false
+          include-heading-horizontal-lines: false
+          horizontal-line-length: 55
+          include-selahs: true
+          indent-using: "space"
+          indent-paragraphs: 2
+          indent-poetry: 2
+          indent-poetry-lines: 4
+          indent-declares: 40
+          indent-psalm-doxology: 30
+          line-length: 0
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-get-passage-text:
       parameters:
         query:
           q: "<value>"

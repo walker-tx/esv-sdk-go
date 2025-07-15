@@ -2,9 +2,12 @@
 
 package esvsdkgo
 
+// Generated from OpenAPI doc version 1.0.0 and generator version 2.657.1
+
 import (
 	"context"
 	"fmt"
+	"github.com/walker-tx/esv-sdk-go/internal/config"
 	"github.com/walker-tx/esv-sdk-go/internal/hooks"
 	"github.com/walker-tx/esv-sdk-go/internal/utils"
 	"github.com/walker-tx/esv-sdk-go/models/components"
@@ -19,7 +22,7 @@ var ServerList = []string{
 	"https://api.esv.org/v3/",
 }
 
-// HTTPClient provides an interface for suplying the SDK with a custom HTTP client
+// HTTPClient provides an interface for supplying the SDK with a custom HTTP client
 type HTTPClient interface {
 	Do(req *http.Request) (*http.Response, error)
 }
@@ -45,37 +48,16 @@ func Float64(f float64) *float64 { return &f }
 // Pointer provides a helper function to return a pointer to a type
 func Pointer[T any](v T) *T { return &v }
 
-type sdkConfiguration struct {
-	Client            HTTPClient
-	Security          func(context.Context) (interface{}, error)
-	ServerURL         string
-	ServerIndex       int
-	Language          string
-	OpenAPIDocVersion string
-	SDKVersion        string
-	GenVersion        string
-	UserAgent         string
-	RetryConfig       *retry.Config
-	Hooks             *hooks.Hooks
-	Timeout           *time.Duration
-}
-
-func (c *sdkConfiguration) GetServerDetails() (string, map[string]string) {
-	if c.ServerURL != "" {
-		return c.ServerURL, nil
-	}
-
-	return ServerList[c.ServerIndex], nil
-}
-
 // Esv - ESV.org API: A convenient way to fetch content from ESV.org.
 // The ESV API provides access to the ESV text, with a customizable presentation in  multiple formats.
 //
 // https://api.esv.org/ - ESV API Website
 type Esv struct {
-	Passages *Passages
+	SDKVersion string
+	Passages   *Passages
 
-	sdkConfiguration sdkConfiguration
+	sdkConfiguration config.SDKConfiguration
+	hooks            *hooks.Hooks
 }
 
 type SDKOption func(*Esv)
@@ -149,14 +131,12 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *Esv {
 	sdk := &Esv{
-		sdkConfiguration: sdkConfiguration{
-			Language:          "go",
-			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.1.2",
-			GenVersion:        "2.610.0",
-			UserAgent:         "speakeasy-sdk/go 0.1.2 2.610.0 1.0.0 github.com/walker-tx/esv-sdk-go",
-			Hooks:             hooks.New(),
+		SDKVersion: "0.2.0",
+		sdkConfiguration: config.SDKConfiguration{
+			UserAgent:  "speakeasy-sdk/go 0.2.0 2.657.1 1.0.0 github.com/walker-tx/esv-sdk-go",
+			ServerList: ServerList,
 		},
+		hooks: hooks.New(),
 	}
 	for _, opt := range opts {
 		opt(sdk)
@@ -176,12 +156,12 @@ func New(opts ...SDKOption) *Esv {
 
 	currentServerURL, _ := sdk.sdkConfiguration.GetServerDetails()
 	serverURL := currentServerURL
-	serverURL, sdk.sdkConfiguration.Client = sdk.sdkConfiguration.Hooks.SDKInit(currentServerURL, sdk.sdkConfiguration.Client)
-	if serverURL != currentServerURL {
+	serverURL, sdk.sdkConfiguration.Client = sdk.hooks.SDKInit(currentServerURL, sdk.sdkConfiguration.Client)
+	if currentServerURL != serverURL {
 		sdk.sdkConfiguration.ServerURL = serverURL
 	}
 
-	sdk.Passages = newPassages(sdk.sdkConfiguration)
+	sdk.Passages = newPassages(sdk, sdk.sdkConfiguration, sdk.hooks)
 
 	return sdk
 }
