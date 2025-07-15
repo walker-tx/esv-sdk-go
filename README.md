@@ -175,7 +175,7 @@ func main() {
 		esvsdkgo.WithSecurity(os.Getenv("ESV_API_KEY")),
 	)
 
-	res, err := s.Passages.Search(ctx, "<value>", nil, nil)
+	res, err := s.Passages.Search(ctx, "<value>", esvsdkgo.Int64(20), esvsdkgo.Int64(1))
 	if err != nil {
 		log.Fatal(err)
 	}

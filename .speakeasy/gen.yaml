@@ -7,6 +7,7 @@ generation:
   maintainOpenAPIOrder: true
   usageSnippets:
     optionalPropertyRendering: withExample
+    sdkInitStyle: constructor
   useClassNamesForArrayFields: true
   fixes:
     nameResolutionDec2023: true
@@ -18,10 +19,15 @@ generation:
   auth:
     oAuth2ClientCredentialsEnabled: true
     oAuth2PasswordEnabled: true
+  tests:
+    generateTests: true
+    generateNewTests: false
+    skipResponseBodyAssertions: false
 go:
-  version: 0.1.2
+  version: 0.2.0
   additionalDependencies: {}
   allowUnknownFieldsInWeakUnions: false
+  baseErrorName: EsvError
   clientServerStatusCodesAsErrors: true
   defaultErrorName: APIError
   envVarPrefix: ESV
