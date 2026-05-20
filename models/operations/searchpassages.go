@@ -21,31 +21,31 @@ func (s SearchPassagesRequest) MarshalJSON() ([]byte, error) {
 }
 
 func (s *SearchPassagesRequest) UnmarshalJSON(data []byte) error {
-	if err := utils.UnmarshalJSON(data, &s, "", false, false); err != nil {
+	if err := utils.UnmarshalJSON(data, &s, "", false, nil); err != nil {
 		return err
 	}
 	return nil
 }
 
-func (o *SearchPassagesRequest) GetQuery() string {
-	if o == nil {
+func (s *SearchPassagesRequest) GetQuery() string {
+	if s == nil {
 		return ""
 	}
-	return o.Query
+	return s.Query
 }
 
-func (o *SearchPassagesRequest) GetPageSize() *int64 {
-	if o == nil {
+func (s *SearchPassagesRequest) GetPageSize() *int64 {
+	if s == nil {
 		return nil
 	}
-	return o.PageSize
+	return s.PageSize
 }
 
-func (o *SearchPassagesRequest) GetPage() *int64 {
-	if o == nil {
+func (s *SearchPassagesRequest) GetPage() *int64 {
+	if s == nil {
 		return nil
 	}
-	return o.Page
+	return s.Page
 }
 
 type Verses struct {
@@ -55,18 +55,18 @@ type Verses struct {
 	Text *string `json:"text,omitempty"`
 }
 
-func (o *Verses) GetVerse() *string {
-	if o == nil {
+func (v *Verses) GetVerse() *string {
+	if v == nil {
 		return nil
 	}
-	return o.Verse
+	return v.Verse
 }
 
-func (o *Verses) GetText() *string {
-	if o == nil {
+func (v *Verses) GetText() *string {
+	if v == nil {
 		return nil
 	}
-	return o.Text
+	return v.Text
 }
 
 type Results struct {
@@ -77,25 +77,25 @@ type Results struct {
 	Verses  []Verses `json:"verses,omitempty"`
 }
 
-func (o *Results) GetReference() *string {
-	if o == nil {
+func (r *Results) GetReference() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Reference
+	return r.Reference
 }
 
-func (o *Results) GetContent() *string {
-	if o == nil {
+func (r *Results) GetContent() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Content
+	return r.Content
 }
 
-func (o *Results) GetVerses() []Verses {
-	if o == nil {
+func (r *Results) GetVerses() []Verses {
+	if r == nil {
 		return nil
 	}
-	return o.Verses
+	return r.Verses
 }
 
 // SearchPassagesResponseBody - Successful response
@@ -109,32 +109,32 @@ type SearchPassagesResponseBody struct {
 	Results      []Results `json:"results,omitempty"`
 }
 
-func (o *SearchPassagesResponseBody) GetPage() *int64 {
-	if o == nil {
+func (s *SearchPassagesResponseBody) GetPage() *int64 {
+	if s == nil {
 		return nil
 	}
-	return o.Page
+	return s.Page
 }
 
-func (o *SearchPassagesResponseBody) GetTotalPages() *int64 {
-	if o == nil {
+func (s *SearchPassagesResponseBody) GetTotalPages() *int64 {
+	if s == nil {
 		return nil
 	}
-	return o.TotalPages
+	return s.TotalPages
 }
 
-func (o *SearchPassagesResponseBody) GetTotalResults() *int64 {
-	if o == nil {
+func (s *SearchPassagesResponseBody) GetTotalResults() *int64 {
+	if s == nil {
 		return nil
 	}
-	return o.TotalResults
+	return s.TotalResults
 }
 
-func (o *SearchPassagesResponseBody) GetResults() []Results {
-	if o == nil {
+func (s *SearchPassagesResponseBody) GetResults() []Results {
+	if s == nil {
 		return nil
 	}
-	return o.Results
+	return s.Results
 }
 
 type SearchPassagesResponse struct {
@@ -145,16 +145,16 @@ type SearchPassagesResponse struct {
 	Next func() (*SearchPassagesResponse, error)
 }
 
-func (o *SearchPassagesResponse) GetHTTPMeta() components.HTTPMetadata {
-	if o == nil {
+func (s *SearchPassagesResponse) GetHTTPMeta() components.HTTPMetadata {
+	if s == nil {
 		return components.HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return s.HTTPMeta
 }
 
-func (o *SearchPassagesResponse) GetObject() *SearchPassagesResponseBody {
-	if o == nil {
+func (s *SearchPassagesResponse) GetObject() *SearchPassagesResponseBody {
+	if s == nil {
 		return nil
 	}
-	return o.Object
+	return s.Object
 }

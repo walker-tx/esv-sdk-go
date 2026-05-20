@@ -12,51 +12,51 @@ type PassageMeta struct {
 	NextChapter  []int64 `json:"next_chapter,omitempty"`
 }
 
-func (o *PassageMeta) GetCanonical() *string {
-	if o == nil {
+func (p *PassageMeta) GetCanonical() *string {
+	if p == nil {
 		return nil
 	}
-	return o.Canonical
+	return p.Canonical
 }
 
-func (o *PassageMeta) GetChapterStart() []int64 {
-	if o == nil {
+func (p *PassageMeta) GetChapterStart() []int64 {
+	if p == nil {
 		return nil
 	}
-	return o.ChapterStart
+	return p.ChapterStart
 }
 
-func (o *PassageMeta) GetChapterEnd() []int64 {
-	if o == nil {
+func (p *PassageMeta) GetChapterEnd() []int64 {
+	if p == nil {
 		return nil
 	}
-	return o.ChapterEnd
+	return p.ChapterEnd
 }
 
-func (o *PassageMeta) GetPrevVerse() *int64 {
-	if o == nil {
+func (p *PassageMeta) GetPrevVerse() *int64 {
+	if p == nil {
 		return nil
 	}
-	return o.PrevVerse
+	return p.PrevVerse
 }
 
-func (o *PassageMeta) GetNextVerse() *int64 {
-	if o == nil {
+func (p *PassageMeta) GetNextVerse() *int64 {
+	if p == nil {
 		return nil
 	}
-	return o.NextVerse
+	return p.NextVerse
 }
 
-func (o *PassageMeta) GetPrevChapter() []int64 {
-	if o == nil {
+func (p *PassageMeta) GetPrevChapter() []int64 {
+	if p == nil {
 		return nil
 	}
-	return o.PrevChapter
+	return p.PrevChapter
 }
 
-func (o *PassageMeta) GetNextChapter() []int64 {
-	if o == nil {
+func (p *PassageMeta) GetNextChapter() []int64 {
+	if p == nil {
 		return nil
 	}
-	return o.NextChapter
+	return p.NextChapter
 }

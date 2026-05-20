@@ -84,150 +84,150 @@ func (g GetPassageTextRequest) MarshalJSON() ([]byte, error) {
 }
 
 func (g *GetPassageTextRequest) UnmarshalJSON(data []byte) error {
-	if err := utils.UnmarshalJSON(data, &g, "", false, false); err != nil {
+	if err := utils.UnmarshalJSON(data, &g, "", false, nil); err != nil {
 		return err
 	}
 	return nil
 }
 
-func (o *GetPassageTextRequest) GetQuery() string {
-	if o == nil {
+func (g *GetPassageTextRequest) GetQuery() string {
+	if g == nil {
 		return ""
 	}
-	return o.Query
+	return g.Query
 }
 
-func (o *GetPassageTextRequest) GetIncludePassageReferences() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludePassageReferences() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludePassageReferences
+	return g.IncludePassageReferences
 }
 
-func (o *GetPassageTextRequest) GetIncludeVerseNumbers() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeVerseNumbers() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeVerseNumbers
+	return g.IncludeVerseNumbers
 }
 
-func (o *GetPassageTextRequest) GetIncludeFirstVerseNumbers() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeFirstVerseNumbers() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeFirstVerseNumbers
+	return g.IncludeFirstVerseNumbers
 }
 
-func (o *GetPassageTextRequest) GetIncludeFootnotes() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeFootnotes() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeFootnotes
+	return g.IncludeFootnotes
 }
 
-func (o *GetPassageTextRequest) GetIncludeFootnoteBody() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeFootnoteBody() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeFootnoteBody
+	return g.IncludeFootnoteBody
 }
 
-func (o *GetPassageTextRequest) GetIncludeHeadings() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeHeadings() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeHeadings
+	return g.IncludeHeadings
 }
 
-func (o *GetPassageTextRequest) GetIncludeShortCopyright() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeShortCopyright() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeShortCopyright
+	return g.IncludeShortCopyright
 }
 
-func (o *GetPassageTextRequest) GetIncludeCopyright() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeCopyright() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeCopyright
+	return g.IncludeCopyright
 }
 
-func (o *GetPassageTextRequest) GetIncludePassageHorizontalLines() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludePassageHorizontalLines() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludePassageHorizontalLines
+	return g.IncludePassageHorizontalLines
 }
 
-func (o *GetPassageTextRequest) GetIncludeHeadingHorizontalLines() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeHeadingHorizontalLines() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeHeadingHorizontalLines
+	return g.IncludeHeadingHorizontalLines
 }
 
-func (o *GetPassageTextRequest) GetHorizontalLineLength() *int64 {
-	if o == nil {
+func (g *GetPassageTextRequest) GetHorizontalLineLength() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.HorizontalLineLength
+	return g.HorizontalLineLength
 }
 
-func (o *GetPassageTextRequest) GetIncludeSelahs() *bool {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIncludeSelahs() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeSelahs
+	return g.IncludeSelahs
 }
 
-func (o *GetPassageTextRequest) GetIndentUsing() *IndentUsing {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIndentUsing() *IndentUsing {
+	if g == nil {
 		return nil
 	}
-	return o.IndentUsing
+	return g.IndentUsing
 }
 
-func (o *GetPassageTextRequest) GetIndentParagraphs() *int64 {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIndentParagraphs() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.IndentParagraphs
+	return g.IndentParagraphs
 }
 
-func (o *GetPassageTextRequest) GetIndentPoetry() *int64 {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIndentPoetry() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.IndentPoetry
+	return g.IndentPoetry
 }
 
-func (o *GetPassageTextRequest) GetIndentPoetryLines() *int64 {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIndentPoetryLines() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.IndentPoetryLines
+	return g.IndentPoetryLines
 }
 
-func (o *GetPassageTextRequest) GetIndentDeclares() *int64 {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIndentDeclares() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.IndentDeclares
+	return g.IndentDeclares
 }
 
-func (o *GetPassageTextRequest) GetIndentPsalmDoxology() *int64 {
-	if o == nil {
+func (g *GetPassageTextRequest) GetIndentPsalmDoxology() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.IndentPsalmDoxology
+	return g.IndentPsalmDoxology
 }
 
-func (o *GetPassageTextRequest) GetLineLength() *int64 {
-	if o == nil {
+func (g *GetPassageTextRequest) GetLineLength() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.LineLength
+	return g.LineLength
 }
 
 type GetPassageTextResponse struct {
@@ -236,16 +236,16 @@ type GetPassageTextResponse struct {
 	PassageResponse *components.PassageResponse
 }
 
-func (o *GetPassageTextResponse) GetHTTPMeta() components.HTTPMetadata {
-	if o == nil {
+func (g *GetPassageTextResponse) GetHTTPMeta() components.HTTPMetadata {
+	if g == nil {
 		return components.HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetPassageTextResponse) GetPassageResponse() *components.PassageResponse {
-	if o == nil {
+func (g *GetPassageTextResponse) GetPassageResponse() *components.PassageResponse {
+	if g == nil {
 		return nil
 	}
-	return o.PassageResponse
+	return g.PassageResponse
 }

@@ -3,86 +3,264 @@ id: cacaa35d-ada0-4b8b-99f3-a2c78661b3d5
 management:
   docChecksum: 68a5dff174a4d4f21b279d09f8b73a3e
   docVersion: 1.0.0
-  speakeasyVersion: 1.551.0
-  generationVersion: 2.610.0
-  releaseVersion: 0.1.2
-  configChecksum: 43f9ad1e79d2ab09f13bb810a0259b4e
+  speakeasyVersion: 1.763.2
+  generationVersion: 2.884.4
+  releaseVersion: 0.2.0
+  configChecksum: 461255b320df8b9a1e712205ab15adcc
   repoURL: https://github.com/walker-tx/esv-sdk-go.git
   installationURL: https://github.com/walker-tx/esv-sdk-go
+persistentEdits:
+  generation_id: 3f1467c4-b768-49c9-9013-eae612d686ab
+  pristine_commit_hash: f44261109ef4f5ea331822e5bcdefa1ff73a8e8e
+  pristine_tree_hash: 1740c246734db119a5341f33c142edbb0f4259bc
 features:
   go:
     additionalDependencies: 0.1.0
-    constsAndDefaults: 0.1.12
-    core: 3.7.5
+    constsAndDefaults: 0.1.14
+    core: 3.13.40
     defaultEnabledRetries: 0.2.0
     downloadStreams: 0.1.2
     envVarSecurityUsage: 0.3.2
-    flattening: 2.81.1
-    globalSecurity: 2.82.11
+    flattening: 2.81.2
+    globalSecurity: 2.82.15
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
-    globalServerURLs: 2.82.3
+    globalServerURLs: 2.83.1
     intellisenseMarkdownSupport: 0.1.0
-    nameOverrides: 2.81.2
-    pagination: 2.82.4
+    nameOverrides: 2.81.4
+    pagination: 2.82.7
     responseFormat: 0.1.2
-    retries: 2.83.2
-    sdkHooks: 0.1.0
-generatedFiles:
-  - .gitattributes
-  - /models/apierrors/error.go
-  - /models/components/httpmetadata.go
-  - /models/components/passagemeta.go
-  - /models/components/passageresponse.go
-  - /models/components/security.go
-  - /models/operations/getpassageaudio.go
-  - /models/operations/getpassagehtml.go
-  - /models/operations/getpassagetext.go
-  - /models/operations/searchpassages.go
-  - USAGE.md
-  - docs/models/apierrors/error.md
-  - docs/models/components/httpmetadata.md
-  - docs/models/components/passagemeta.md
-  - docs/models/components/passageresponse.md
-  - docs/models/components/security.md
-  - docs/models/operations/getpassageaudiorequest.md
-  - docs/models/operations/getpassageaudioresponse.md
-  - docs/models/operations/getpassagehtmlrequest.md
-  - docs/models/operations/getpassagehtmlresponse.md
-  - docs/models/operations/getpassagetextrequest.md
-  - docs/models/operations/getpassagetextresponse.md
-  - docs/models/operations/indentusing.md
-  - docs/models/operations/option.md
-  - docs/models/operations/results.md
-  - docs/models/operations/searchpassagesrequest.md
-  - docs/models/operations/searchpassagesresponse.md
-  - docs/models/operations/searchpassagesresponsebody.md
-  - docs/models/operations/verses.md
-  - docs/sdks/esv/README.md
-  - docs/sdks/passages/README.md
-  - esv.go
-  - go.mod
-  - internal/hooks/hooks.go
-  - internal/utils/contenttype.go
-  - internal/utils/env.go
-  - internal/utils/form.go
-  - internal/utils/headers.go
-  - internal/utils/json.go
-  - internal/utils/pathparams.go
-  - internal/utils/queryparams.go
-  - internal/utils/requestbody.go
-  - internal/utils/retries.go
-  - internal/utils/security.go
-  - internal/utils/utils.go
-  - models/apierrors/apierror.go
-  - models/operations/options.go
-  - passages.go
-  - retry/config.go
-  - types/bigint.go
-  - types/date.go
-  - types/datetime.go
-  - types/decimal.go
-  - types/pointers.go
+    retries: 2.84.2
+    sdkHooks: 0.3.0
+trackedFiles:
+  .gitattributes:
+    id: 24139dae6567
+    last_write_checksum: sha1:84b0115789fc3ea52e31df701d8a27f76077e29f
+    pristine_git_object: e6a994416d0f527912d2d272e2583458f4fc9bcb
+  USAGE.md:
+    id: 3aed33ce6e6f
+    last_write_checksum: sha1:ad20deefcdc778111921322beb63e0813f8c9812
+    pristine_git_object: a116b3a658d7665cdcd8c1dd117289ec47235df0
+  docs/models/apierrors/error.md:
+    id: 7c6e7719d689
+    last_write_checksum: sha1:dcd8e7d929274317e081ea3c390f1dff3616a040
+    pristine_git_object: a06ec9ba511da5fea28c0da944063c7d5a52d3b6
+  docs/models/components/httpmetadata.md:
+    id: 728948c70168
+    last_write_checksum: sha1:7c40945dac218ce5e5e11e7c907d27a3ea14c417
+    pristine_git_object: df1fdd59f3c85e4ba70573ff7954b12ac1d33d08
+  docs/models/components/passagemeta.md:
+    id: 44d56d5d7869
+    last_write_checksum: sha1:2d889324c5a81841a51f883887aacd9a06cfe0e9
+    pristine_git_object: 53386806dd05770f970d38b0ba07503630ee1520
+  docs/models/components/passageresponse.md:
+    id: 47410e4f9561
+    last_write_checksum: sha1:cd366a5bfc5d258663f0f18bcaf855ff132d8e8f
+    pristine_git_object: bd5ffe2d0700af2857557df1cf49d44e74773a6d
+  docs/models/components/security.md:
+    id: 54906b49ea28
+    last_write_checksum: sha1:17e398b2abd89b7459f07c9ff820a7cc7c7b7bb7
+    pristine_git_object: 634e6368385c203eacc61b1d31e40bf72b7dca0e
+  docs/models/operations/getpassageaudiorequest.md:
+    id: 7af07b5e3e3d
+    last_write_checksum: sha1:1ee906a0a663d77744bde05b6a86cc5ab8183dd8
+    pristine_git_object: 19ec59e4837be9358493f083ff8c61673b38a370
+  docs/models/operations/getpassageaudioresponse.md:
+    id: 5f6459da611a
+    last_write_checksum: sha1:719195071e7ecbdfce149a0636e4d47bf6acf3c3
+    pristine_git_object: e2d6cffbe64f4d559e713084d2c2f8a81dac0143
+  docs/models/operations/getpassagehtmlrequest.md:
+    id: f9192206e981
+    last_write_checksum: sha1:399f45d6d96518f54b92375c5ee259fc858f4d3a
+    pristine_git_object: 1713141f888f94d0b7ac963953bcbd5a06f526d6
+  docs/models/operations/getpassagehtmlresponse.md:
+    id: 4e6d34e0f423
+    last_write_checksum: sha1:76380252395af668856ce0f24b913cc49030568a
+    pristine_git_object: 3b0e20eacdfe3ed3e55c3a356d696fa54c6e0995
+  docs/models/operations/getpassagetextrequest.md:
+    id: 3d0350c68918
+    last_write_checksum: sha1:88db69a8f68610e3249f18afa85f8dc718767817
+    pristine_git_object: 8e1eef4868c15159f917160887bf0860a6738dae
+  docs/models/operations/getpassagetextresponse.md:
+    id: deab846ad521
+    last_write_checksum: sha1:42a651282206b45d125672dcdf4b9e41288f12ca
+    pristine_git_object: 282b564a20638ebf28e43a73655a8bdbe8d4537d
+  docs/models/operations/indentusing.md:
+    id: ca67f12d74ea
+    last_write_checksum: sha1:36543af13e047562ad842a8a666527e5aecea151
+    pristine_git_object: 53ba361548250d2dd8fac06bafcc4c69df21e6f0
+  docs/models/operations/option.md:
+    id: 2ac1bd52a5fb
+    last_write_checksum: sha1:a1f4960f3539f3045c75cc39f6dfcf682ba22dab
+    pristine_git_object: b7448e686875f835ba0c1257242138c5929b0dcf
+  docs/models/operations/results.md:
+    id: 2d0cb3ac205d
+    last_write_checksum: sha1:958a22ac81cafe06288b13f313dcb97c88580651
+    pristine_git_object: bbd895b91f96862c8e5d64b504e25715a10ea90f
+  docs/models/operations/searchpassagesrequest.md:
+    id: e0702af3f611
+    last_write_checksum: sha1:15b2b1b29b0265e7fcd7582dbb9421a41965a7a7
+    pristine_git_object: 46ea4092620d6011fa522338ca99329ca30ef0ac
+  docs/models/operations/searchpassagesresponse.md:
+    id: 7d356be7f060
+    last_write_checksum: sha1:ce180c3f1b1070a70e229ea65a4cd67191638608
+    pristine_git_object: eea4303a7e45842dd52abbe67ef258bb3d791cea
+  docs/models/operations/searchpassagesresponsebody.md:
+    id: 1d14d8a26bde
+    last_write_checksum: sha1:59ae1d2cc848fd0d4927bcdfba8e76d465862a5a
+    pristine_git_object: 6b45d1c0c8fa865d9a2866f858264506d4b5045d
+  docs/models/operations/verses.md:
+    id: 285d3906d34f
+    last_write_checksum: sha1:3389c793665543306f0003e80ca2ff3f0e3fbe82
+    pristine_git_object: e080bb3f770cc7d9c5a5cad16aee88aa25f167fa
+  docs/sdks/passages/README.md:
+    id: 2f799cc05d18
+    last_write_checksum: sha1:0c657b379cf9b18331d2023c3e44d03b54333f7f
+    pristine_git_object: d160fcfc8237c0195018bc76c2773eb59f24d6f5
+  esv.go:
+    id: 94bb28d8df26
+    last_write_checksum: sha1:3c85d481c44bc09126e36bc77c7016743908c511
+    pristine_git_object: 2a2b3c5e0c7f0291df1bf722909284b8fab3542b
+  go.mod:
+    id: c47645c391ad
+    last_write_checksum: sha1:63af6efad2ae2ae18a83bc728bbbb9cf1e89ac7f
+    pristine_git_object: 7a706e421754fa5ff14e432d70b64ae61f2f06e8
+  internal/config/sdkconfiguration.go:
+    id: 33b8bfac5265
+    last_write_checksum: sha1:11620676320be1b5cda6365297fc9a3650e198c4
+    pristine_git_object: 0df1a94f5d58362261fda8974890a922b21d9dfc
+  internal/hooks/hooks.go:
+    id: 336be70ed5c0
+    last_write_checksum: sha1:e9dfe1cfacc8cd86a565be7c4e7d5a804052d21b
+    pristine_git_object: 17bd5513218ed029fbc1ff5fc5bb9e027263f6e0
+  internal/utils/contenttype.go:
+    id: 928a56fe6755
+    last_write_checksum: sha1:ab5cfd860d02c6e6a37f89e2b5649a9859947fb1
+    pristine_git_object: f6487e01eb987c0aa49e7aa50b5ff24830314c63
+  internal/utils/env.go:
+    id: ac8bab30c73d
+    last_write_checksum: sha1:1e0bcb2d2caed9f3657f1dbc99b55811bed0298c
+    pristine_git_object: 110d464eacf2387b347bad1cb903666354a339e9
+  internal/utils/form.go:
+    id: 8ea133d76535
+    last_write_checksum: sha1:cee5442f6d8699fe2b1182d83c6e4651488b1e8d
+    pristine_git_object: 3534fe2c5902659bda051e694332851f846ec84a
+  internal/utils/headers.go:
+    id: 90d4f18d4adf
+    last_write_checksum: sha1:430253b705a7c81405ea3f35435239467e8660ab
+    pristine_git_object: 8627b81243735df970d4f3912e3010369f5c867f
+  internal/utils/json.go:
+    id: ad03e3c502d8
+    last_write_checksum: sha1:5c00cd22ead9cb275730476f6a6b9a1a65a516f5
+    pristine_git_object: 6e7af57365878d77c3e7011747a3ae905e2c0db9
+  internal/utils/pathparams.go:
+    id: 1f3e0c30fd90
+    last_write_checksum: sha1:cd59bcb4ffd8ad8662efd602a26955ae9e7a50fc
+    pristine_git_object: d7102758d6d4228ccee8b7e6bbc694d6691d3392
+  internal/utils/queryparams.go:
+    id: e7f604e65a58
+    last_write_checksum: sha1:361dfc24e14b42d3f687ae7375aea39cb3153f38
+    pristine_git_object: 19b2a3fc1ed037216e789b659b0ee745c3403d1e
+  internal/utils/requestbody.go:
+    id: 22445ec1c044
+    last_write_checksum: sha1:cf595e0a4cb3e7524c23935d2d1823338dc62fa6
+    pristine_git_object: 7d3c1fb5ac1a75770dda45c1d766aac293af0ed9
+  internal/utils/retries.go:
+    id: b5e011d15c2d
+    last_write_checksum: sha1:5c6f77e0de2c5b8c32659549b2efd35a10181f63
+    pristine_git_object: dbe6c9b4fd01d3055f41d38f116d71447338f059
+  internal/utils/security.go:
+    id: eeb54c55241b
+    last_write_checksum: sha1:1c0b332b3cf0fa405df0c5bf4e03f335139566b6
+    pristine_git_object: 7c1a372ae314a9d82ab82c3db610e7ffe67ecfab
+  internal/utils/union.go:
+    id: db86c85746b6
+    last_write_checksum: sha1:4fe38f508f9380f83980b9ff2c2a787525cd0415
+    pristine_git_object: 9d95cb3d6505b815aab2d925c51e7374c1a5e55c
+  internal/utils/union_test.go:
+    id: 4b56247171bd
+    last_write_checksum: sha1:bd5c7506e1d6238117c1ac4e340314a5a41401b5
+    pristine_git_object: 138f7e2a066b10dffd0a9957ecfcab9e00dd26fe
+  internal/utils/utils.go:
+    id: 1133b2a27019
+    last_write_checksum: sha1:36a3e6fb95d71868d1755dbb3b924a37340c7ea7
+    pristine_git_object: b32a14db51857aafab25498ba32fa2905c92b5d8
+  models/apierrors/apierror.go:
+    id: 4cecf27a5a54
+    last_write_checksum: sha1:e699d3325ea82ea2b0d29656396210f0513c3391
+    pristine_git_object: 61a9628a6533548245be5af929f1d4f96dd780b5
+  models/apierrors/error.go:
+    id: 4b4731adf85f
+    last_write_checksum: sha1:2af10a53eb0854d669665b2c1589aa0c3175bc2b
+    pristine_git_object: 3fc868283890d31a9a895b0d2c5d084a183a4404
+  models/components/httpmetadata.go:
+    id: 790bad4a7abb
+    last_write_checksum: sha1:01a20fcff33179809ff9920ee431c7adabbd98f1
+    pristine_git_object: 148ec47fb2dea6c188ec68eb3532d93169608168
+  models/components/passagemeta.go:
+    id: 85f3009b5e8c
+    last_write_checksum: sha1:060e360275432f869a715572fa80e49e7a75cc8f
+    pristine_git_object: 4e661b6becbc4343c20921aa931a3a569043d4aa
+  models/components/passageresponse.go:
+    id: 5702b3208309
+    last_write_checksum: sha1:b1a3c6e70fbe1ebf127d561805d2b714e4be73c0
+    pristine_git_object: 5c9a2e3915f394cd6aa893158525972302866781
+  models/components/security.go:
+    id: 3a5eba5fe9e0
+    last_write_checksum: sha1:bf7f3e69f8f18930dc9719d0b23fbd1e6db93dbf
+    pristine_git_object: 57dba0f47a2699459a4148b673045c1616dc5014
+  models/operations/getpassageaudio.go:
+    id: b7dd4dc77464
+    last_write_checksum: sha1:58041352f888e6f2a1d15c8143834cc0295448e7
+    pristine_git_object: 4f2b8d39ec1ffe2e289bede87e6ad83c2d7b5c55
+  models/operations/getpassagehtml.go:
+    id: f2fc85f1eb07
+    last_write_checksum: sha1:ed061e321cd634ad30b77b0ea717321d5d207dc4
+    pristine_git_object: 2f17c73efd002db72b5bb4254130733413af6a10
+  models/operations/getpassagetext.go:
+    id: d864780e1f78
+    last_write_checksum: sha1:8dcc5d8f214662817994f0ef08a224b1b8a6d861
+    pristine_git_object: ce3383c7e643dbd2f5a1c88e741e86f2a81f21f4
+  models/operations/options.go:
+    id: d20dd4db9865
+    last_write_checksum: sha1:1208fca033478936f644f1a56bce101903d812b3
+    pristine_git_object: 814d2d4a0ba3716a7c96edb96967a9cb5dc3deab
+  models/operations/searchpassages.go:
+    id: 86d1e9e63da1
+    last_write_checksum: sha1:c070214d18897ad39639b8e6359590e288b44dea
+    pristine_git_object: 9f843db92f3156b22c10462ede8514d40e9cdc86
+  optionalnullable/optionalnullable.go:
+    id: ce60f259ead3
+    last_write_checksum: sha1:d6aff1a420c31e025ea21d46cf056e305ae76fe8
+    pristine_git_object: c6739be0619b6726565e0f11855ffe44b0e5607e
+  optionalnullable/optionalnullable_test.go:
+    id: ad67101ebca3
+    last_write_checksum: sha1:2e9433eff1651ac77d6678ea76880d9a4980cbc2
+    pristine_git_object: e6e5a01c6e721e879e24a38a1f97e3e27d4686d4
+  passages.go:
+    id: 28b13f5460a2
+    last_write_checksum: sha1:e8efd065568a2054ac51e9496583d3f2f340cee7
+    pristine_git_object: de66467296c48a9dd5739af10c6d6ed1bdc915e6
+  retry/config.go:
+    id: 82d673cb0389
+    last_write_checksum: sha1:7f7d96b59a18e95bac847ae09c63bbd911ee8432
+    pristine_git_object: 5b3dc7c122d8ab08905485342d7474f8f163888d
+  types/bigint.go:
+    id: 6f911e1a03c3
+    last_write_checksum: sha1:49b004005d0461fb04b846eca062b070b0360b31
+    pristine_git_object: 9c6a086d51595888a6ff787ebcb8693559afee95
+  types/date.go:
+    id: 231a623ce1b7
+    last_write_checksum: sha1:3036a2e1ed15a1d484c093367eba000c38f384d0
+    pristine_git_object: 5b2782f219efe6bfbce46fc2dec68998eb759438
+  types/datetime.go:
+    id: 5023aac30a47
+    last_write_checksum: sha1:196d050af6450669214e9ae4fd28e56263ae2b5d
+    pristine_git_object: 3eff332daa04e34cec5ffb10add670bafd8ac454
+  types/pointers.go:
+    id: 6d0d0a6cb6f3
+    last_write_checksum: sha1:fc2275ea006257ba9ba4ff6f2a2cdb6205371eef
+    pristine_git_object: 35c439d2661e08fcb6a854096fd7b9a8561b3938
 examples:
   getPassageHtml:
     StandardReference:
@@ -285,6 +463,31 @@ examples:
           application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-get-passage-html:
+      parameters:
+        query:
+          q: "<value>"
+          include-passage-references: true
+          include-verse-numbers: true
+          include-first-verse-numbers: true
+          include-footnotes: true
+          include-footnote-body: true
+          include-headings: true
+          include-short-copyright: false
+          include-copyright: false
+          include-passage-horizontal-lines: false
+          include-heading-horizontal-lines: false
+          horizontal-line-length: 55
+          include-selahs: true
+          include-css-link: true
+          inline-styles: false
+          wrapping-div: true
+          div-classes: "esv"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"code": "<value>", "message": "<value>"}
   searchPassages:
     speakeasy-default-search-passages:
       parameters:
@@ -356,6 +559,15 @@ examples:
       parameters:
         query:
           q: "19001001-19001006,19003001-19003008"
+      responses:
+        "200":
+          audio/mpeg: "x-file: example.file"
+        "400":
+          application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-get-passage-audio:
+      parameters:
+        query:
+          q: "<value>"
       responses:
         "200":
           audio/mpeg: "x-file: example.file"
@@ -586,5 +798,88 @@ examples:
           application/json: {}
         "400":
           application/json: {"code": "<value>", "message": "<value>"}
+    speakeasy-default-get-passage-text:
+      parameters:
+        query:
+          q: "<value>"
+          include-passage-references: true
+          include-verse-numbers: true
+          include-first-verse-numbers: true
+          include-footnotes: true
+          include-footnote-body: true
+          include-headings: true
+          include-short-copyright: false
+          include-copyright: false
+          include-passage-horizontal-lines: false
+          include-heading-horizontal-lines: false
+          horizontal-line-length: 55
+          include-selahs: true
+          indent-using: "space"
+          indent-paragraphs: 2
+          indent-poetry: 2
+          indent-poetry-lines: 4
+          indent-declares: 40
+          indent-psalm-doxology: 30
+          line-length: 0
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"code": "<value>", "message": "<value>"}
 examplesVersion: 1.0.2
 generatedTests: {}
+generatedFiles:
+  - .gitattributes
+  - /models/apierrors/error.go
+  - /models/components/httpmetadata.go
+  - /models/components/passagemeta.go
+  - /models/components/passageresponse.go
+  - /models/components/security.go
+  - /models/operations/getpassageaudio.go
+  - /models/operations/getpassagehtml.go
+  - /models/operations/getpassagetext.go
+  - /models/operations/searchpassages.go
+  - USAGE.md
+  - docs/models/apierrors/error.md
+  - docs/models/components/httpmetadata.md
+  - docs/models/components/passagemeta.md
+  - docs/models/components/passageresponse.md
+  - docs/models/components/security.md
+  - docs/models/operations/getpassageaudiorequest.md
+  - docs/models/operations/getpassageaudioresponse.md
+  - docs/models/operations/getpassagehtmlrequest.md
+  - docs/models/operations/getpassagehtmlresponse.md
+  - docs/models/operations/getpassagetextrequest.md
+  - docs/models/operations/getpassagetextresponse.md
+  - docs/models/operations/indentusing.md
+  - docs/models/operations/option.md
+  - docs/models/operations/results.md
+  - docs/models/operations/searchpassagesrequest.md
+  - docs/models/operations/searchpassagesresponse.md
+  - docs/models/operations/searchpassagesresponsebody.md
+  - docs/models/operations/verses.md
+  - docs/sdks/esv/README.md
+  - docs/sdks/passages/README.md
+  - esv.go
+  - go.mod
+  - internal/hooks/hooks.go
+  - internal/utils/contenttype.go
+  - internal/utils/env.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - models/apierrors/apierror.go
+  - models/operations/options.go
+  - passages.go
+  - retry/config.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/decimal.go
+  - types/pointers.go

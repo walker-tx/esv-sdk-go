@@ -12,11 +12,11 @@ type GetPassageAudioRequest struct {
 	Query string `queryParam:"style=form,explode=true,name=q"`
 }
 
-func (o *GetPassageAudioRequest) GetQuery() string {
-	if o == nil {
+func (g *GetPassageAudioRequest) GetQuery() string {
+	if g == nil {
 		return ""
 	}
-	return o.Query
+	return g.Query
 }
 
 type GetPassageAudioResponse struct {
@@ -26,16 +26,16 @@ type GetPassageAudioResponse struct {
 	ResponseStream io.ReadCloser
 }
 
-func (o *GetPassageAudioResponse) GetHTTPMeta() components.HTTPMetadata {
-	if o == nil {
+func (g *GetPassageAudioResponse) GetHTTPMeta() components.HTTPMetadata {
+	if g == nil {
 		return components.HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetPassageAudioResponse) GetResponseStream() io.ReadCloser {
-	if o == nil {
+func (g *GetPassageAudioResponse) GetResponseStream() io.ReadCloser {
+	if g == nil {
 		return nil
 	}
-	return o.ResponseStream
+	return g.ResponseStream
 }

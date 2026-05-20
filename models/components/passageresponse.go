@@ -14,37 +14,37 @@ type PassageResponse struct {
 	Passages []string `json:"passages,omitempty"`
 }
 
-func (o *PassageResponse) GetQuery() *string {
-	if o == nil {
+func (p *PassageResponse) GetQuery() *string {
+	if p == nil {
 		return nil
 	}
-	return o.Query
+	return p.Query
 }
 
-func (o *PassageResponse) GetCanonical() *string {
-	if o == nil {
+func (p *PassageResponse) GetCanonical() *string {
+	if p == nil {
 		return nil
 	}
-	return o.Canonical
+	return p.Canonical
 }
 
-func (o *PassageResponse) GetParsed() [][]int64 {
-	if o == nil {
+func (p *PassageResponse) GetParsed() [][]int64 {
+	if p == nil {
 		return nil
 	}
-	return o.Parsed
+	return p.Parsed
 }
 
-func (o *PassageResponse) GetPassageMeta() []PassageMeta {
-	if o == nil {
+func (p *PassageResponse) GetPassageMeta() []PassageMeta {
+	if p == nil {
 		return nil
 	}
-	return o.PassageMeta
+	return p.PassageMeta
 }
 
-func (o *PassageResponse) GetPassages() []string {
-	if o == nil {
+func (p *PassageResponse) GetPassages() []string {
+	if p == nil {
 		return nil
 	}
-	return o.Passages
+	return p.Passages
 }

@@ -49,129 +49,129 @@ func (g GetPassageHTMLRequest) MarshalJSON() ([]byte, error) {
 }
 
 func (g *GetPassageHTMLRequest) UnmarshalJSON(data []byte) error {
-	if err := utils.UnmarshalJSON(data, &g, "", false, false); err != nil {
+	if err := utils.UnmarshalJSON(data, &g, "", false, nil); err != nil {
 		return err
 	}
 	return nil
 }
 
-func (o *GetPassageHTMLRequest) GetQuery() string {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetQuery() string {
+	if g == nil {
 		return ""
 	}
-	return o.Query
+	return g.Query
 }
 
-func (o *GetPassageHTMLRequest) GetIncludePassageReferences() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludePassageReferences() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludePassageReferences
+	return g.IncludePassageReferences
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeVerseNumbers() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeVerseNumbers() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeVerseNumbers
+	return g.IncludeVerseNumbers
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeFirstVerseNumbers() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeFirstVerseNumbers() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeFirstVerseNumbers
+	return g.IncludeFirstVerseNumbers
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeFootnotes() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeFootnotes() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeFootnotes
+	return g.IncludeFootnotes
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeFootnoteBody() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeFootnoteBody() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeFootnoteBody
+	return g.IncludeFootnoteBody
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeHeadings() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeHeadings() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeHeadings
+	return g.IncludeHeadings
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeShortCopyright() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeShortCopyright() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeShortCopyright
+	return g.IncludeShortCopyright
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeCopyright() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeCopyright() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeCopyright
+	return g.IncludeCopyright
 }
 
-func (o *GetPassageHTMLRequest) GetIncludePassageHorizontalLines() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludePassageHorizontalLines() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludePassageHorizontalLines
+	return g.IncludePassageHorizontalLines
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeHeadingHorizontalLines() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeHeadingHorizontalLines() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeHeadingHorizontalLines
+	return g.IncludeHeadingHorizontalLines
 }
 
-func (o *GetPassageHTMLRequest) GetHorizontalLineLength() *int64 {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetHorizontalLineLength() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.HorizontalLineLength
+	return g.HorizontalLineLength
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeSelahs() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeSelahs() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeSelahs
+	return g.IncludeSelahs
 }
 
-func (o *GetPassageHTMLRequest) GetIncludeCSSLink() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetIncludeCSSLink() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.IncludeCSSLink
+	return g.IncludeCSSLink
 }
 
-func (o *GetPassageHTMLRequest) GetInlineStyles() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetInlineStyles() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.InlineStyles
+	return g.InlineStyles
 }
 
-func (o *GetPassageHTMLRequest) GetWrappingDiv() *bool {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetWrappingDiv() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.WrappingDiv
+	return g.WrappingDiv
 }
 
-func (o *GetPassageHTMLRequest) GetDivClasses() *string {
-	if o == nil {
+func (g *GetPassageHTMLRequest) GetDivClasses() *string {
+	if g == nil {
 		return nil
 	}
-	return o.DivClasses
+	return g.DivClasses
 }
 
 type GetPassageHTMLResponse struct {
@@ -180,16 +180,16 @@ type GetPassageHTMLResponse struct {
 	PassageResponse *components.PassageResponse
 }
 
-func (o *GetPassageHTMLResponse) GetHTTPMeta() components.HTTPMetadata {
-	if o == nil {
+func (g *GetPassageHTMLResponse) GetHTTPMeta() components.HTTPMetadata {
+	if g == nil {
 		return components.HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetPassageHTMLResponse) GetPassageResponse() *components.PassageResponse {
-	if o == nil {
+func (g *GetPassageHTMLResponse) GetPassageResponse() *components.PassageResponse {
+	if g == nil {
 		return nil
 	}
-	return o.PassageResponse
+	return g.PassageResponse
 }
